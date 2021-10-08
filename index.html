@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <script>
+		function checkLocalStorage() {
+			const value = window.localStorage.getItem('local');
+			alert(`Local storage 'local' key is '${value}'`);
+		}
+		
+		function checkSessionStorage() {
+			const value = window.sessionStorage.getItem('local');
+			alert(`Session storage 'session' key is '${value}'`);
+		}
+    </script>
+	<p>To check local storage key 'local', click <a href="#" onclick="checkLocalStorage()">here</a></p>
+	<p>To check session storage key 'session', click <a href="#" onclick="checkSessionStorage()">here</a></p>
+  </body>
+</html>
